@@ -1,4 +1,5 @@
 import Login from './components/pages/Login';
+import Home from './components/pages/Home';
 import Dashboard from './components/pages/Dashboard';
 
 export const myRoutes = [
@@ -7,7 +8,13 @@ export const myRoutes = [
         component: Login
     },
     {
-        path: '/dashboard',
-        component: Dashboard
+        path: '/admin/',
+        component: Home,
+        children: [
+            {
+                path: 'dashboard',
+                component: Dashboard
+            }
+        ]
     }
 ]

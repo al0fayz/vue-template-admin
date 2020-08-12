@@ -1,21 +1,14 @@
 <template>
-    <div class="hold-transition sidebar-mini layout-fixed">
-        <div class="wrapper">
-            <navbar />
-        </div>
+    <div class="content-wrapper">
+        <contentheader  name="Dashboard" />
     </div>
 </template>
 <script>
-import navbar from './master/Navbar';
+import contentheader from './master/Content-Header';
 
 export default {
-    data(){
-        return{
-
-        }
-    },
     components: {
-        navbar,
+        contentheader,
     }
 }
 </script>
